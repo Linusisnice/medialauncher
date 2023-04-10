@@ -1,0 +1,27 @@
+[  
+    {
+       "displayName" : "Youtube",
+        "urlPath": "https://youtube.com/tv"
+    },
+   {
+       "displayName" : "Netflix",
+        "urlPath": "https://netflix.com"
+    },
+    {
+       "displayName" : "HBO Max",
+        "urlPath": "https://www.hbomax.com"
+    },
+   {
+       "displayName" : "Disney Plus ",
+        "urlPath": "https://www.disneyplus.com/"
+    },
+   {
+       "displayName" : "XBOX Cloud",
+        "urlPath": "https://www.xbox.com/play"
+    },   
+    {
+        "displayName" : "Geforce Now",
+         "urlPath": "https://play.geforcenow.com/mall/#/layout/games"
+     }
+    
+] 
