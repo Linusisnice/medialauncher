@@ -13,6 +13,7 @@ export const GamepadController = () => {
         notifications.show({
           title: 'New Gamepad Connected',
           message: gamepadName,
+          autoClose: 5000,
           style: {
             position: 'fixed',
             top: '10px',
