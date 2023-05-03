@@ -1,2 +1,2 @@
 # medialauncher
-A Media launcher made on windows for launching apps and games.
+A Media launcher based on windows for launching apps and games.
