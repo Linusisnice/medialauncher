@@ -18,7 +18,7 @@ export const AppWrap = () => {
 const AppHeader = () => {
 
     return (
-        <Header height={80}>
+        <Header height={80} p={'lg'} sx={{display: 'flex', alignItems: 'center'}}>
             <Title order={1}>MediaPortal</Title>
         </Header>
     )
