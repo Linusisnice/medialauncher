@@ -1,6 +1,7 @@
-import { AppShell, Header, Title } from "@mantine/core";
+import { AppShell, Header, Title, Group } from "@mantine/core";
 import { AppView } from "./AppView";
 import { GamepadController } from "../util/gamepad";
+import { Settings } from "./settings/settings";
 
 
 export const AppWrap = () => {
@@ -18,8 +19,11 @@ export const AppWrap = () => {
 const AppHeader = () => {
 
     return (
-        <Header height={80} p={'lg'} sx={{display: 'flex', alignItems: 'center'}}>
-            <Title order={1}>MediaPortal</Title>
+        <Header height={80} p={'lg'} >
+            <Group position="apart">
+                <Title order={1}>MediaPortal</Title>
+                <Settings/>
+            </Group>
         </Header>
     )
 }

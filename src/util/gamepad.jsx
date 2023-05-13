@@ -6,7 +6,7 @@ export const GamepadController = () => {
 
     window.addEventListener('gamepadconnected', (e) => connectGamepad(e))
     window.addEventListener('gamepaddisconnected', (e) => disconnectGamepad(e))
-
+  
     function connectGamepad(e) {
         const gamepadName = e.gamepad.id.split('(')[0].trim();
         setGamepadDetails(gamepadName);
@@ -23,9 +23,20 @@ export const GamepadController = () => {
       }
       
 
-    function disconnectGamepad(e) {
-        setGamepadDetails(null)
-    }
+      function disconnectGamepad(e) {
+        const gamepadName = e.gamepad.id.split('(')[0].trim();
+        setGamepadDetails(gamepadName);
+        notifications.show({
+          title: 'Gamepad Disconnected',
+          message: gamepadName,
+          autoClose: 5000,
 
-    
+          style: {
+            position: 'fixed',
+            top: '10px',
+            right: '10px'
+          }
+        });
+      }
+      console.log(gamepadDetails)
 }

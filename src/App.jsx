@@ -2,6 +2,7 @@ import { MantineProvider, Text, useMantineColorScheme, ColorSchemeProvider, Butt
 import { useState } from 'react';
 import { AppWrap } from './components/AppWrap';
 import { Notifications } from '@mantine/notifications'
+import { GamepadController } from './util/gamepad';
 export default function App() {
   const [colorScheme, setColorScheme] = useState('light');
   const toggleColorScheme = () => {
@@ -12,6 +13,7 @@ export default function App() {
     }
   };
 
+
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider
@@ -21,9 +23,9 @@ export default function App() {
           colorScheme,
         }}
       >
-        <Notifications/>
+        <GamepadController/>
+        <Notifications limit={1}/>
         <AppWrap/>
-        {}
       </MantineProvider>
     </ColorSchemeProvider>
   );
